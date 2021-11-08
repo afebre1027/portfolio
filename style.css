@@ -1,0 +1,88 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+}
+
+/*start*/
+body {
+    color: rgb(26, 1, 26);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+padding: 20px 35px;
+background-color: #130f40;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+top: 0;
+}
+
+
+header h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    margin: 0;
+}
+header a {
+    text-decoration: none;
+    color: #f0932b;
+}
+header nav {
+    margin: 10px 0;
+}
+Header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+padding: 10px 15px;
+font-weight: bold;
+}
+/* about me*/
+.intro {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    
+    
+}
+p {
+display: flex;
+flex-direction: column;
+padding: 20px 35px;
+flex-wrap: wrap;
+text-align: right;
+border-left: 3px solid blue;
+margin-left: 100px;
+padding-left: 0px;
+}
+address {
+    text-align: center;
+}
+.info {
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+div {
+    display: inline-block;
+}
