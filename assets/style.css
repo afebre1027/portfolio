@@ -16,19 +16,22 @@ body {
 
 header {
 padding: 20px 35px;
-background-color: var(--primary-color);
+background-color: rgba(15, 64, 31, 0.0);
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
 top: 0;
 }
-
+header:hover {
+    background-color: rgba(15, 64, 31, .8);
+}
 
 header h1 {
     font-weight: bolder;
     font-size: 50px;
     margin: 0;
 }
+
 header a {
     text-decoration: none;
     color: #f0932b;
@@ -66,11 +69,21 @@ body {
 }
                                     /* about me*/
 .bio {
-    background-color: rgba(240, 147, 40, .8);
+    background-color: rgba(240, 147, 40, .0);
     padding-top: 0px;
-    margin: 20px 40px 0px 40px;
+    margin: 20px 200px 0px 200px;
     border-top-left-radius: 70px;
     border-left: 2px solid var(--primary-color);
+    border-top: 2px solid var(--primary-color);
+}
+.bio:hover {
+    background-color: rgba(15, 64, 31, .8);
+    padding-top: 0px;
+    margin: 20px 200px 0px 200px;
+    border-top-left-radius: 70px;
+    border-left: 2px solid var(--secondary-color);
+    box-shadow: 20px 20px 20px 20px white inset;
+    color: var(--secondary-color);
 }
 .section-container {
     text-align: center;
@@ -82,10 +95,10 @@ body {
     padding-bottom: 10px;
     text-align: center;
     border-bottom: 2px solid var(--primary-color);
-    width: 30%;
     font-size: 30px;
-    
 }
+
+
 .paragraph {
     text-align: center;
     
@@ -122,19 +135,32 @@ body {
     font-size: 30px;
 }
 .section-container2 {
-    background-color:rgba(15, 64, 31, 0.8) ;
+    background-color:rgba(15, 64, 31, 0.0) ;
     text-align: center;
     padding: 30px;
     color: var(--secondary-color);
     z-index: 9999;
-    margin: 10px 40px;
+    margin: 10px 200px;
     border-bottom: 2px solid;
     border-right: 2px solid orange;
     border-bottom-right-radius: 70px;
 }
+.section-container2:hover {
+    background-color:rgba(240, 147, 40, .8) ;
+    text-align: center;
+    padding: 30px;
+    color: var(--primary-color);
+    z-index: 9999;
+    margin: 10px 200px;
+    border-bottom: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+    border-bottom-right-radius: 70px;
+    box-shadow: 20px 20px 20px 20px white inset;
+}
 .main img {
-    border: 2px solid;
     margin-top: 10px;
+    border-radius: 10px;
+    height: 50%;
 }
 
                                 /*Bottom 3 images*/
@@ -150,12 +176,16 @@ body {
 .img-row img {
     border: 2px solid;
     border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    filter: blur(1px);
 }
 .img-row img:hover {
     border: 2px groove white;
     padding-top: 0px;
     margin-top: 5px;
     border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    filter: none;
 }
                             /*!!!  contact Me  !!!*/
 .contact p {
@@ -165,10 +195,11 @@ body {
     padding: 10px 10px 0px 30px;
 }
 .contact-container {
-    background-color: var(--secondary-color);
+    
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
@@ -177,5 +208,75 @@ body {
 
 address {
     text-align: center;
-
 }
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+    header h1 {
+      width: 100%;
+      text-align: center;
+    
+    }
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+    header nav ul li a {
+      font-size: 20px;
+    }
+    h2 {
+      text-align: center;
+      width: 100%;
+    }
+    }
+    
+    /* for tablets & smaller between 768-575px*/
+    @media screen and (max-width: 768px) {
+    div {
+      padding: 30px 15px;
+    }
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    .step img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .step-text {
+      flex: 100%;
+    }
+    }
+    
+    /* phones & smaller 575px-smaller*/
+    @media screen and (max-width: 575px) {
+    .section-title {
+      width: 95%;
+    }
+    .intro p {
+      width: 100%;
+    }
+    .trainer {
+      flex: 0 100%;
+    }
+    .contact-info {
+      text-align: center;
+    }
+    .contact-info > * {
+      flex: 0 100%;
+    }
+    .contact-form {
+      order: 3;
+    }
+    }
