@@ -177,7 +177,7 @@ body {
     border: 2px solid;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    filter: blur(1px);
+    filter: blur(10px);
 }
 .img-row img:hover {
     border: 2px groove white;
@@ -205,6 +205,7 @@ body {
     align-items: center;
     padding: 20px;
 }
+.contact-container:
 
 address {
     text-align: center;
@@ -236,47 +237,9 @@ address {
     
     /* for tablets & smaller between 768-575px*/
     @media screen and (max-width: 768px) {
-    div {
-      padding: 30px 15px;
-    }
-    .step h3 {
-      flex: 1 100%;
-      text-align: center;
-    }
-    .step-info {
-      flex: 2 100%;
-      text-align: center;
-      justify-content: center;
-    }
-    .step img {
-      flex: 0 32%;
-      margin-right: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-    .step-text {
-      flex: 100%;
-    }
+
     }
     
     /* phones & smaller 575px-smaller*/
     @media screen and (max-width: 575px) {
-    .section-title {
-      width: 95%;
-    }
-    .intro p {
-      width: 100%;
-    }
-    .trainer {
-      flex: 0 100%;
-    }
-    .contact-info {
-      text-align: center;
-    }
-    .contact-info > * {
-      flex: 0 100%;
-    }
-    .contact-form {
-      order: 3;
-    }
     }
