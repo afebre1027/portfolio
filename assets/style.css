@@ -77,13 +77,13 @@ body {
     border-top: 2px solid var(--primary-color);
 }
 .bio:hover {
-    background-color: rgba(15, 64, 31, .8);
     padding-top: 0px;
     margin: 20px 200px 0px 200px;
     border-top-left-radius: 70px;
     border-left: 2px solid var(--secondary-color);
-    box-shadow: 20px 20px 20px 20px white inset;
-    color: var(--secondary-color);
+    border-top: 2px solid var(--secondary-color);
+    color: white;
+    background-image: linear-gradient(129deg, rgba(15,64,31,.7), rgba(15,64,31,.0));
 }
 .section-container {
     text-align: center;
@@ -146,7 +146,6 @@ body {
     border-bottom-right-radius: 70px;
 }
 .section-container2:hover {
-    background-color:rgba(240, 147, 40, .8) ;
     text-align: center;
     padding: 30px;
     color: var(--primary-color);
@@ -155,7 +154,7 @@ body {
     border-bottom: 2px solid var(--primary-color);
     border-right: 2px solid var(--primary-color);
     border-bottom-right-radius: 70px;
-    box-shadow: 20px 20px 20px 20px white inset;
+    background-image: linear-gradient( to right, rgba(250, 244, 244,0), rgba(240, 147, 40, .6));
 }
 .main img {
     margin-top: 10px;
@@ -195,7 +194,6 @@ body {
     padding: 10px 10px 0px 30px;
 }
 .contact-container {
-    
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -204,35 +202,29 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+    filter: opacity(.5);
 }
-.contact-container:
+.contact-container:hover {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-image: radial-gradient(white 5%,var(--secondary-color) 30%, var(--primary-color) 60%);
+    filter: opacity(1);
+}
 
 address {
     text-align: center;
 }
+address:hover {
+
+}
 @media screen and (max-width: 980px) {
-    header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
-    }
-    header h1 {
-      width: 100%;
-      text-align: center;
-    
-    }
-    header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-    }
-    header nav ul li a {
-      font-size: 20px;
-    }
-    h2 {
-      text-align: center;
-      width: 100%;
-    }
+
     }
     
     /* for tablets & smaller between 768-575px*/
