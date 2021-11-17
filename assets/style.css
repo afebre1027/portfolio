@@ -102,7 +102,7 @@ body {
 .paragraph {
     text-align: center;
     
-    float: right;
+    /* float: right; */
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 10%;
@@ -111,14 +111,16 @@ body {
 }
 .bio-img img {
     max-width: 30%;
-    float: left;
+    /* float: left; */
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
+    width: 400px;
+     height: 300px;
 }
 .bio-img {
-    flex: 2 70%;
+    /* flex: 2 70%; */
     display: flex;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     justify-content: space-evenly;
     align-items: center;
     align-content: center; 
@@ -139,7 +141,7 @@ body {
     text-align: center;
     padding: 30px;
     color: var(--secondary-color);
-    z-index: 9999;
+    /* z-index: 9999; */
     margin: 10px 200px;
     border-bottom: 2px solid;
     border-right: 2px solid orange;
@@ -159,9 +161,12 @@ body {
 .main img {
     margin-top: 10px;
     border-radius: 10px;
-    height: 50%;
+    /* height: 50%; */
 }
-
+#main-img {
+    width: 1000px;
+    height: 500px;
+}
                                 /*Bottom 3 images*/
 .img-row {
     margin: 0 auto;
@@ -177,6 +182,8 @@ body {
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
     filter: blur(10px);
+    height: 100px;
+    width: 350px;
 }
 .img-row img:hover {
     border: 2px groove white;
@@ -213,25 +220,26 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
-    background-image: radial-gradient(white 5%,var(--secondary-color) 30%, var(--primary-color) 60%);
-    filter: opacity(1);
+    filter: opacity(.8);
 }
 
 address {
     text-align: center;
 }
-address:hover {
-
+@media screen and (max-width: 1600px) {
+    #main-img {
+        width: 800px;
+    }
+    .img-row img {
+        width: 250px;
+    }
+} 
+@media screen and (max-width: 1300px) {
+    #main-img {
+        height: 250px;
+        width: 600px;
+    }
+    .bio-img {
+        flex-direction: column;
+    }
 }
-@media screen and (max-width: 980px) {
-
-    }
-    
-    /* for tablets & smaller between 768-575px*/
-    @media screen and (max-width: 768px) {
-
-    }
-    
-    /* phones & smaller 575px-smaller*/
-    @media screen and (max-width: 575px) {
-    }
